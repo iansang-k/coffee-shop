@@ -21,10 +21,6 @@ class Customer:
         if len(value) > 15:
             raise ValueError("Customer name cannot exceed 15 characters")
         self._name = value
-
-    def _validate_initial_state(self):
-        if not hasattr(self, '_name'):
-            raise AttributeError("Customer not properly initialized")
         
     def orders(self):
         return self._orders

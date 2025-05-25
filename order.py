@@ -3,7 +3,6 @@ class Order:
         self.customer = customer
         self.coffee = coffee
         self.price = price
-        # Add this order to customer's and coffee's order lists
         customer._orders.append(self)
         coffee._orders.append(self)
 

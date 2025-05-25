@@ -16,10 +16,6 @@ class Coffee:
             raise ValueError(f"Coffee name must be >= 3 characters, got {len(value)}")
         self._name = value
     
-    def _validate_initial_state(self):
-        if not hasattr(self, '_name'):
-            raise AttributeError("Coffee not properly initialized")
-
     def orders(self):
         return self._orders
 
